@@ -1,21 +1,40 @@
 .header {
-  float: right;
+  background-color: aqua;
+  width: 1800px;
+  height: 46px;
+  display: block;
+  padding: auto 0;
   list-style-type: none; /* list item point remove */
-  padding: 0;
-  margin: 10px;
+  text-decoration: none; /* linklerdeki alt çizgi içeriği kaldırmak */
   overflow: hidden; /* içeriğin alana sığma durumunu kontrol eder.*/
+  flex-grow: 1;
   margin-right: 16px;
   font-family: arial,sans-serif;
   font-size: 13px;
+  
+}
+
+.svg-size {
+  background-color: #fff;
+  overflow: hidden;
+  outline: none;
+  vertical-align: middle;
+  width: 1%;
+  height: auto;
+  float: right;
+  
 }
 
 .headerli a {
+  background-color: red;
   display: block;
+ 
+  margin: auto;
   float: right;
   color: black;
   text-align: center;
   padding: 5px 5px;
-  text-decoration: none;
+ 
 }
 
 .headerli a:hover {
@@ -23,12 +42,14 @@
 }
 
 .container {
+  background-color: green;
   text-align: center;
   margin: 100px; 
 }
 
 .search-area {
-  background: #fff;
+  background-color: yellow;
+  /* background: #fff; */
   display: flex;
   border: 1px solid #dfe1e5;
   box-shadow: none;
@@ -51,6 +72,7 @@
 }
 
 .search-img {
+  background-color: black;
   display: flex;
   align-items: center;
   margin: auto;
@@ -130,6 +152,7 @@
 .footer {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   overflow: hidden;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
