@@ -1,4 +1,6 @@
 .header {
+  float: right;
+  text-align: center;
   list-style-type: none;
   margin: 10px;
   overflow: hidden;
@@ -9,6 +11,7 @@
 
 .headerli a {
   display: block;
+  float: right;
   color: black;
   text-align: center;
   padding: 5px 5px;
@@ -50,6 +53,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 .search-img {
   display: flex;
   align-items: center;
+  margin: auto;
   padding-right: 13px;
   margin-top: -5px;
 }
