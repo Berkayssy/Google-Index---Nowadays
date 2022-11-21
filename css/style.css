@@ -1,4 +1,7 @@
 .header {
+  width: 300px;
+  margin: auto;
+  float: right;
   /* list-style-type: none;
   margin: 10px;
   overflow: hidden;
