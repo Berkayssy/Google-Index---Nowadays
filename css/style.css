@@ -1,40 +1,47 @@
 .header {
-  background-color: aqua;
-  width: 1800px;
-  height: 46px;
+  color: #bdc1c6;
   display: block;
-  padding: auto 0;
+  padding: 4px;
+  margin-top: 0;
+  min-width: auto;       /* genişliği minimum düzeyde otomatik ayarlar */
+  height: 48px;
   list-style-type: none; /* list item point remove */
-  text-decoration: none; /* linklerdeki alt çizgi içeriği kaldırmak */
-  overflow: hidden; /* içeriğin alana sığma durumunu kontrol eder.*/
   flex-grow: 1;
-  margin-right: 16px;
   font-family: arial,sans-serif;
-  font-size: 13px;
-  
+  font-size: 14px;
 }
 
-.svg-size {
-  background-color: #fff;
-  overflow: hidden;
+.img-b {
+  padding-top: 0px;
+  background-size: 32px 32px;
+  box-sizing: border-box;
   outline: none;
-  vertical-align: middle;
-  width: 1%;
-  height: auto;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.svg-size svg {
+  /* font: 13px/27px Roboto,Arial,sans-serif; */
+  background-color: #fff;
+  display: block;
+  vertical-align: middle; /* dikey ortalama yapmak için kullanılır. */
+  width: 30px;
+  height: 30px;
   float: right;
-  
 }
 
 .headerli a {
-  background-color: red;
+  width: 33px;
+  height: 32px;
   display: block;
- 
-  margin: auto;
+  margin-right: 16px;
   float: right;
   color: black;
   text-align: center;
+  text-decoration: none; /* linklerdeki alt çizgi içeriği kaldırmak */
+  overflow: hidden; /* içeriğin alana sığma durumunu kontrol eder.*/
   padding: 5px 5px;
- 
 }
 
 .headerli a:hover {
@@ -42,22 +49,23 @@
 }
 
 .container {
-  background-color: green;
+  display: block;
+  margin: auto;
   text-align: center;
   margin: 100px; 
+  padding-top: 50px;
 }
 
 .search-area {
-  background-color: yellow;
-  /* background: #fff; */
+  background: #fff; 
   display: flex;
   border: 1px solid #dfe1e5;
   box-shadow: none;
   z-index: 3;
+  width: 500px;
   height: 44px;
-  margin: 0 auto;
+  margin: auto;
   margin-top: -77px;
-  width: 582px;
 }
 
 .search-area:hover {
@@ -65,6 +73,8 @@
 }
 
 .search {
+  width: 50px;
+  height: 44px;
   flex: 1;
   display: flex;
   padding: 5px 8px 0 16px;
@@ -72,12 +82,12 @@
 }
 
 .search-img {
-  background-color: black;
-  display: flex;
+  display: inline-flex; 
+  flex-direction: row;
+  float: left;
   align-items: center;
-  margin: auto;
-  padding-right: 13px;
-  margin-top: -5px;
+  padding-right: 13px; 
+  margin-top: -5px; 
 }
 
 .search-img span {
@@ -92,6 +102,8 @@
 }
 
 .input-enter {
+  width: 480px;
+  height: 50px;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -108,6 +120,8 @@
 }
 
 .input {
+  width: 403px;
+  height: 34px;
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.87);
@@ -126,7 +140,7 @@
   text-indent: 0px;
   text-shadow: none;
   text-align: start;
-  appearance: textfield;
+  appearance: text;
   cursor: text; 
 }
 
@@ -149,6 +163,10 @@
   user-select: none; 
 }
 
+.buttons {
+  text-align: center;
+}
+
 .footer {
   margin: 0;
   padding: 0;
@@ -156,19 +174,21 @@
   overflow: hidden;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
-  position: fixed;
+  position: fixed; /* imleç ile birlikte hareket eder.  */
   bottom: 0;
   width: 100%;
   margin-left: -8px;
-  line-height: 10px; 
+  line-height: 1px; 
 }
 
 .footerli {
-  float: left; 
+  float: left;  
 }
 
 .footerli a {
+  width: -3%;
   display: block;
+  flex-wrap: wrap;
   color: #70757a;
   text-align: center;
   padding: 14px 16px;
@@ -180,5 +200,5 @@
 }
 
 .footerli a:hover {
-  text-decoration: underline;
+  text-decoration: underline;  
 }
