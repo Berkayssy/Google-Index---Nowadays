@@ -65,7 +65,7 @@
   border-radius: 30px;
   box-shadow: none;
   z-index: 3;
-  width: 600px;
+  width: 480px;
   height: 44px;
   margin: auto;
   margin-top: -77px;
@@ -105,7 +105,6 @@
 }
 
 .input-enter {
-
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -115,15 +114,12 @@
   color: transparent;
   flex: 100%;
   white-space: pre;
-  font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  display: block;
+  font: 16px;
+  height: 34px;
+  /* display: none; */
 }
 
 .input {
-  width: 403px;
-  height: 34px;
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.87);
@@ -132,7 +128,7 @@
   outline: none;
   display: flex;
   flex: 100%;
-  margin-top: -68px;
+  margin-top: -37px;
   font: 16px arial, sans-serif;
   line-height: 34px;
   height: 34px !important;
@@ -143,8 +139,42 @@
   text-indent: 0px;
   text-shadow: none;
   text-align: start;
-  appearance: text;
+  appearance: auto;
   cursor: text; 
+}
+
+.voice-img {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
+
+.voice-img span {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.photo-img {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
+
+.photo-img span {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .googlesearch {
