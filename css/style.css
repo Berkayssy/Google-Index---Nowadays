@@ -1,3 +1,5 @@
+/* Nav Start */
+
 .header {
   color: #bdc1c6;
   display: block;
@@ -22,31 +24,31 @@
 }
 
 .svg-size svg {
-  /* font: 13px/27px Roboto,Arial,sans-serif; */
+  font: 13px/27px Roboto,Arial,sans-serif;
   background-color: #fff;
   display: block;
-  vertical-align: middle; /* dikey ortalama yapmak için kullanılır. */
-  width: 30px;
-  height: 30px;
   float: right;
+  padding-top: 0;
+  width: 25px;
+  height: 30px;
 }
 
 .headerli a {
   width: 33px;
   height: 32px;
-  display: block;
-  margin-right: 16px;
   float: right;
   color: black;
   text-align: center;
   text-decoration: none; /* linklerdeki alt çizgi içeriği kaldırmak */
   overflow: hidden; /* içeriğin alana sığma durumunu kontrol eder.*/
-  padding: 5px 5px;
+  padding: 5px 15px;
 }
 
 .headerli a:hover {
   text-decoration: underline;
 }
+
+/* Container Start */
 
 .container {
   display: block;
@@ -60,9 +62,10 @@
   background: #fff; 
   display: flex;
   border: 1px solid #dfe1e5;
+  border-radius: 30px;
   box-shadow: none;
   z-index: 3;
-  width: 500px;
+  width: 600px;
   height: 44px;
   margin: auto;
   margin-top: -77px;
@@ -86,8 +89,8 @@
   flex-direction: row;
   float: left;
   align-items: center;
-  padding-right: 13px; 
-  margin-top: -5px; 
+  padding-right: 10px; 
+  margin-top: -7px; 
 }
 
 .search-img span {
@@ -102,8 +105,7 @@
 }
 
 .input-enter {
-  width: 480px;
-  height: 50px;
+
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -125,6 +127,7 @@
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #dfe1e5;
   word-wrap: break-word;
   outline: none;
   display: flex;
