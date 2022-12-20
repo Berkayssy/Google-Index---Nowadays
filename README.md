@@ -4,4 +4,4 @@
 
 ---
 
-![](/png)
+![](/assets/Google%20Nowadays.png)
